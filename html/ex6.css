@@ -1,0 +1,47 @@
+body{
+background-color: rgb(193, 106, 215);
+font-family: 'Times Neww Roman',Times,serif;
+}
+h1
+{
+text-align:center;
+}
+.img-div
+{
+border:2px solid rgb(233, 144, 223); width:240px; padding:5px;
+border-radius:15px; float:left; text-align:center; height:240px;
+}
+.zoom
+{
+width:240px; height:200px;border-radius:15px;overflow:hidden;
+}
+body{
+    background-color:rgb(152, 106, 179);
+    font-family:'Times Mew Roman',Times,serif;
+}
+h1{
+    text-align:center;
+}
+.img-div
+{
+    border:2px solid rgb(145, 116, 182);width:240px;padding:5px;
+    border-radius:15px;float:left;text-align:center;height:240px;
+}
+.zoom img{
+    max-width:100%;
+    height:100%;transition: all 0.5s;padding:2px;cursor:pointer;
+}
+.zoom:hover img{
+    transform:scale3d(1.4,1.4,1.4);border-radius:15px;
+}
+.zoom.zoom:hover
+{
+    box-shadow:  0 0 15px rgb(128, 128, 128);
+}
+desc{
+    padding:15px;
+}
+p{
+    text-decoration: rgb(214,184,107); text-align: center;font-size: 30px;
+    color:rgb(65, 4, 98);
+}

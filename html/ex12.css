@@ -1,0 +1,39 @@
+.cardb{ border: 1px solid;
+
+margin: 5%;
+font-size: 100%;
+width: 20%; border- radius:
+2%; text- align:
+center;
+background-color: rgb(255, 255, 255);
+}
+button{
+background-color: rgb(195, 201, 211);
+color: rgb(3, 3, 3);
+padding : 3%;
+}
+.card{
+display: flex; flex- wrap: wrap;
+}
+.cardb{ display: flex;
+flex-direction: row;
+@media only screen and (min-width:320px) and (max-width : 480px){
+.card{
+display: flex;
+flex-direction: column;
+}
+.cardb{
+font-size: 90%;
+width: 100%;
+background-color: cornflowerblue;
+}
+button{
+font-size: 30px;
+font-family: monospace;
+}
+
+@media only screen and(min-width:481px) and (max-width:768px){
+.card{
+display: flex;
+flex-direction: column;
+}
