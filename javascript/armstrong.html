@@ -1,0 +1,19 @@
+<pre><script>
+var a=prompt('enter 3 digits number:');
+var b=0;
+var i=0;
+do{
+b+=a[i]*a[i]*a[i];
+document.writeln(parseInt(b));
+i++;
+}
+while(i<a.length);
+if(b==a)
+{
+document.writeln(`${a} is armstrong number`);
+}
+else
+{
+document.writeln(`${a} is not  armstrong number`);
+}
+</script></pre>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+<script> 
+let result;
+ 
+const number1=parseFloat(prompt('enter first number')) 
+const number2=parseFloat(prompt('enter second number'))
+const operator = prompt('Enter operator(+,-,*,/)')
+switch(operator)
+{
+case '+':
+result = number1 + number2; 
+         
+          break;
+case '-':
+result = number1 - number2; 
+         
+
+         break;
+case '*':
+result = number1 * number2; 
+         
+         break;
+case '/':
+result = number1 / number2; 
+         break;
+default:
+result="invalid operator";
+        break;
+}
+document.write(`${number1}${operator}${number2}=${result}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head><title>objects</title></head>
+<body>
+<h1>---OBJECTS---</h1>
+<pre>
+<script>
+const fruits={ name:"mango",color:"yellow",price:100};
+document.writeln(fruits.name);
+document.writeln(fruits["price"]);
+let x="color";
+document.writeln(fruits[x]);
+document.writeln(delete fruits.color);
+fruits.quantity="1kg";
+document.writeln(fruits.quantity);
+
+document.writeln("**nested object**");
+const person={name:"padhu",age:20,subjects:{telugu:100,maths:90}};
+document.writeln(person.subjects.maths);
+document.writeln(person.subjects["maths"]);
+let a="subjects";
+let b="telugu";
+document.writeln(person[a][b]);
+
+document.writeln("**loops**");
+let s=" ";
+for(let x in fruits)
+{
+s+=fruits[x];
+s+=("  ");
+}
+//document.getElementById("a").innerHTML=s;
+document.writeln(s);
+
+
+
+document.writeln("**convert into strings**");
+let p=JSON.stringify(fruits);
+document.writeln(p);
+
+document.writeln("**THIS**");
+const student={firstname:"padmaja",lastname:"katuri",
+	       fullname:function()
+		{
+		  return(this.firstname+" "+this.lastname).toUpperCase();
+		
+		}
+		};
+document.writeln(student.fullname());
+
+
+document.writeln("**object inside array and array inside object**");
+
+const details={course:"btech",branch:"cse",
+		data:[{name:"padma",loc:["kkd","rjy","vzg"]},{name:"anju",loc:["rvp","hyd","mdp"]}
+		]
+	      };
+let l=" ";
+for(let m in details.data)
+{
+l+="<h1>"+details.data[m].name+"</h1>";
+for(let n in details.data[m].loc)
+{
+l+="<h5>"+details.data[m].loc[n]+"</h5>";
+}
+}
+document.writeln(l);
+
+
+</script>
+
+</pre>
+</body>
+</html>

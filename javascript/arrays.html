@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Accessing Array Elements in unordered format</h1>
+<p id="demo"></p>
+<pre>
+<script>
+let s="<ul>"
+const clgNames=["giet","aditya","pragathi"]; 
+for(let i=0;i<clgNames.length;i++)
+{
+s+="<li>"+clgNames[i]+"</li>"
+}
+"</ul>" 
+s+=document.getElementById("demo").innerHTML=s;
+
+document.writeln("***array methods***");
+
+const fruits=["apple","banana","mango","orange"];
+document.writeln(fruits.toString());
+document.writeln(fruits.push("lemon"))
+document.writeln(fruits);
+document.writeln(fruits.pop());
+document.writeln(fruits);
+document.writeln(fruits.unshift("grapes"));
+document.writeln(fruits.shift());
+document.writeln(fruits);
+document.writeln(fruits.slice(2))
+fruits.splice(2,1,"kivi")
+document.writeln(fruits);
+
+fruits[7]="cherry";
+document.writeln(fruits)
+
+let j=fruits.join("*");
+document.writeln(j);
+</script>
+</pre>
+</body>
+</html>

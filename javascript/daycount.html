@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>switch case</title>
+</head>
+<body>
+<script>
+let year =parseInt(prompt("enter year:"));
+ let month =parseInt(prompt("enter month:"));
+ let daycount;
+switch(month) {
+ case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
+daycount = 31;
+document.write("Number of days in a month : " + daycount);
+break;
+case 4:
+case 6:
+case 9:
+case 11:
+daycount = 30;
+document.write("Number of days in a month : " + daycount);
+ break;
+case2:
+if((year % 4 ==0 && !(year % 100 == 0))|| year % 400 ==0){
+daycount = 29;
+document.write("Number of days in a month : " + daycount);
+}
+else
+{
+daycount = 28;
+}
+break;
+default:
+document.write("invalid month");
+}
+</script>
+</body>
+</html>
