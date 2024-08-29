@@ -1,0 +1,50 @@
+<html>
+<body>
+<h1>document object</h1>
+enter number:<input type="text" id="num">
+<input type="button" value="cube" onclick="cube()"><br>
+
+dog:<input type="checkbox" name="animal">
+lion:<input type="checkbox" name="animal">
+parrot:<input type="checkbox" name="bird"><br>
+<input type="button" value="check" onclick="check()"><br>
+
+<ul>
+<li>tea</li>
+<li>coffee</li>
+<li>water</li>
+</ul>
+<p>2nd  element of un ordererd list is:</p>
+<p id="demo"></p>
+<pre>
+<script>
+document.write("hello");
+document.writeln('welcome');
+
+
+function cube()
+{
+var a=document.getElementById("num").value;
+alert(`cube of ${a} is ${a*a*a}`);
+}
+
+function check()
+{
+var x=document.getElementsByName("animal");
+for(let i=0;i<x.length;i++)
+{
+if(x[i].type=="checkbox")
+{
+x[i].checked=true;
+}
+}
+}
+
+
+var y=document.getElementsByTagName("li");
+document.getElementById("demo").innerHTML=y[1].innerHTML
+
+</script>
+</pre>
+</body>
+</html>

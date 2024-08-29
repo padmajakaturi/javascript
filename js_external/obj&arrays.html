@@ -1,0 +1,43 @@
+<pre>
+<script>
+var a={pin:1,name:'padhu'};
+document.writeln(a["pin"]);
+document.writeln(a.name);
+let e="name";
+document.writeln(a[e]);
+a.marks=80;
+document.writeln(a["marks"]);
+
+let b=new Object;
+b.name="anju";
+document.writeln(b["name"]);
+
+var c={pin:2,name:"kavya",marks:{telugu:30,english:50}};
+document.writeln(c["marks"]["telugu"]);
+var s=" ";
+for(let x in a)
+{
+
+s+=a[x];
+}
+document.writeln(s);
+document.writeln(JSON.stringify(a));
+
+const student={fname:"padmaja",lname:"katuri",fullname:function(){return(this.fname+" "+this.lname)}}
+document.writeln(student.fullname());
+
+
+const d={course:"btech",branch:"cse",data:[{pin:1,name:"padma",loc:["kkd","rjy"]},
+					 {pin:2,name:"anju",loc:["mdp","hyd"]}]};
+let l=" ";
+for(let m in d.data)
+{
+l+="<h1>"+d.data[m].name+"</h1>"
+for(let n in d.data[m].loc)
+{
+l+="<h3>"+d.data[m].loc[n]+"</h3>"
+}
+}
+document.writeln(l);
+</script>
+</pre>

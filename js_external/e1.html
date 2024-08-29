@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+h2
+{
+color:red;
+}
+</style>
+<body>
+<h1>html content</h1>
+<p id='content'>hello</p>
+<input type='button' value='padhu' onclick=document.getElementById('content').innerHTML='padhu'>
+<input type='button' value='padma' onclick=document.getElementById('content').innerHTML='padma'>
+<h1>attributes</h1>
+<img src="img1.jpg" id='att' length='100px' width='100px'><br>
+<input type='button' value='padhu' onclick=document.getElementById('att').src="img2.jpg">
+<input type='button' value='flower' onclick=document.getElementById('att').src="img3.jpg">
+<h1>css</h1>
+<h2 id='css'>welcome</h2>
+<input type='button' value='green' onclick=document.getElementById('css').style.color="green">
+<input type='button' value='orange' onclick=document.getElementById('css').style.color="orange">
+<h1>hide&display</h1>
+<p id='hd'>javascript</p>
+<input type='button' value='hide' onclick=document.getElementById('hd').style.display="none">
+<input type='button' value='display' onclick=document.getElementById('hd').style.display="block">
+</body>
+</html>
